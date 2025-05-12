@@ -1,0 +1,104 @@
+Z-score aykırı değer sayısı:
+ 2257
+IQR aykırı değer sayısı:
+ Marital status                                     505
+Application mode                                     0
+Application order                                  541
+Course                                             442
+Daytime/evening attendance                         483
+Previous qualification                             707
+Previous qualification (grade)                     179
+Nacionality                                        110
+Mother's qualification                               0
+Father's qualification                               0
+Mother's occupation                                182
+Father's occupation                                177
+Admission grade                                     86
+Displaced                                            0
+Educational special needs                           51
+Debtor                                             503
+Tuition fees up to date                            528
+Gender                                               0
+Scholarship holder                                1099
+Age at enrollment                                  441
+International                                      110
+Curricular units 1st sem (credited)                577
+Curricular units 1st sem (enrolled)                424
+Curricular units 1st sem (evaluations)             158
+Curricular units 1st sem (approved)                180
+Curricular units 1st sem (grade)                   726
+Curricular units 1st sem (without evaluations)     294
+Curricular units 2nd sem (credited)                530
+Curricular units 2nd sem (enrolled)                369
+Curricular units 2nd sem (evaluations)             109
+Curricular units 2nd sem (approved)                 44
+Curricular units 2nd sem (grade)                   877
+Curricular units 2nd sem (without evaluations)     282
+Unemployment rate                                    0
+Inflation rate                                       0
+GDP                                                  0
+Target                                               0
+dtype: int64
+
+--- KNN ---
+Doğruluk: 0.6983050847457627
+              precision    recall  f1-score   support
+
+           0       0.80      0.68      0.74       316
+           1       0.37      0.28      0.32       151
+           2       0.72      0.86      0.78       418
+
+    accuracy                           0.70       885
+   macro avg       0.63      0.61      0.61       885
+weighted avg       0.69      0.70      0.69       885
+
+Precision: 0.6890857424347203
+Recall: 0.6983050847457627
+F1 Score: 0.6879032036785758
+[1m 1/28[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 30ms/step[1m28/28[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 2ms/step 
+
+--- ANN ---
+Test doğruluğu: 0.7627
+              precision    recall  f1-score   support
+
+           0       0.85      0.76      0.80       316
+           1       0.47      0.39      0.43       151
+           2       0.79      0.90      0.84       418
+
+    accuracy                           0.76       885
+   macro avg       0.70      0.68      0.69       885
+weighted avg       0.76      0.76      0.76       885
+
+Precision: 0.755351452076519
+Recall: 0.7627118644067796
+F1 Score: 0.7559918070294102
+
+--- SMOTE ---
+Orijinal sınıf dağılımı:
+ Target
+2    2209
+0    1421
+1     794
+Name: count, dtype: int64
+SMOTE sonrası sınıf dağılımı:
+ Target
+0    2209
+2    2209
+1    2209
+Name: count, dtype: int64
+
+--- Karar Ağacı ---
+Doğruluk: 0.7368024132730016
+              precision    recall  f1-score   support
+
+           0       0.81      0.73      0.77       444
+           1       0.69      0.63      0.66       439
+           2       0.72      0.86      0.78       443
+
+    accuracy                           0.74      1326
+   macro avg       0.74      0.74      0.73      1326
+weighted avg       0.74      0.74      0.73      1326
+
+Precision: 0.7393789894957231
+Recall: 0.7368024132730016
+F1 Score: 0.7347600912108145
